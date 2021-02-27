@@ -1,0 +1,205 @@
+/* CSS reset */
+*, *:before, *:after { 
+    margin:0;
+    padding:0;
+    font-family: Arial,sans-serif;
+  }
+   
+  /* remove a linha dos links */
+  a{
+    text-decoration: none;
+  }
+   
+  /* esconde as ancoras da tela */
+  a.links{
+    display: none;
+  }
+
+  body {
+    background: #949499;
+  }
+
+.btn-tool{
+    padding-right: 10%;
+}
+
+.content{
+    width: 400px;  
+    margin-top: 10px;
+    margin-left: 10%;
+    position: relative;
+
+}
+
+.content1{
+    width: 100%;  
+    margin-top: 20px;
+    position: relative;
+    text-align: center;
+}
+
+.content2{
+    width: 90%;  
+    margin-top: 40px;  
+    margin-left: 5%;
+    position: relative;
+    text-align: center;
+}
+
+#main{
+    position: absolute;
+    top: 0px;
+    width: 88%;   
+    padding: 18px 6% 30px 6%;
+    margin: 0px 0px 35px 0;
+    background: #f7f7f7;
+    border: 2px solid rgba(0, 27, 31, 0.8);
+     
+    -webkit-box-shadow: 5px;
+    box-shadow: 5px;
+    border-radius: 5px;
+     
+    -webkit-animation-duration: 0.5s;
+    -webkit-animation-timing-function: ease;
+    -webkit-animation-fill-mode: both;
+   
+    animation-duration: 0.5s;
+    animation-timing-function: ease;
+    animation-fill-mode: both;
+  }
+
+  /* Style the navigation bar */
+  .navbar {
+    width: 100%;
+    background-color: #555;
+    overflow: auto;
+  }
+  
+  /* Navbar links */
+  .navbar a {
+    float: left;
+    text-align: center;
+    padding: 12px;
+    color: white;
+    text-decoration: none;
+    font-size: 17px;
+  }
+  
+  /* The dropdown container */
+  .dropdown {
+    float: left;
+    overflow: hidden;
+  }
+  
+  /* Dropdown button */
+  .dropdown .dropbtn {
+    font-size: 17px;
+    border: none;
+    outline: none;
+    color: white;
+    padding: 12px;
+    background-color: inherit;
+    font-family: inherit; /* Important for vertical align on mobile phones */
+    margin: 0; /* Important for vertical align on mobile phones */
+  }
+  
+  /* Add a red background color to navbar links on hover */
+  .navbar a:hover, .dropdown:hover .dropbtn {
+    background-color: rgb(0, 0, 0);
+  }
+  
+  /* Dropdown content (hidden by default) */
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #555;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+  
+  /* Links inside the dropdown */
+  .dropdown-content a {
+    float: none;
+    color: white;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+  }
+  
+  /* Add a grey background color to dropdown links on hover */
+  .dropdown-content a:hover {
+    background-color: black;
+  }
+  
+  /* Show the dropdown menu on hover */
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
+  
+  /* Current/active navbar link */
+  .active {
+    background-color: #1c1586;
+  }
+  
+  /* Add responsiveness - will automatically display the navbar vertically instead of horizontally on screens less than 500 pixels */
+  @media screen and (max-width: 500px) {
+    .navbar a {
+      float: none;
+      display: block;
+    }
+  }
+
+
+
+  .btn-hover {
+    min-height: 45px; 
+    width: 200px; 
+    border-radius: 10px; 
+    font-family: Arial, sans-serif; 
+    user-select: text; 
+    height: 105px; 
+    font-size: 20px; 
+    font-weight: 600; 
+    letter-spacing: 1px; 
+    background-color: #ffffff;
+    color: #0a0363;
+    border: 3px solid #0a0363;
+    cursor: wait;
+  }
+  
+  .btn-hover:hover{
+    border: 3px solid white;
+    background-color: #0a0363; 
+    color: rgb(255, 255, 255); 
+    cursor: pointer;
+  }
+
+
+  svg {
+    display: inline-block;
+    font-size: inherit;
+    height: 1em;
+    overflow: visible;
+    vertical-align: -.125em;
+  }
+
+  /* Grid Container */
+  .grid {
+    display: grid;
+    max-width: 90%;
+    margin: 0 auto;
+  }
+
+  .grid-template-columns {
+
+    grid-template-columns: 34% 33% 33%;
+  }
+
+  .item {
+    margin: 5px;
+    margin-top: 30px;
+    margin-bottom: 40px;
+    text-align: center;
+  }
